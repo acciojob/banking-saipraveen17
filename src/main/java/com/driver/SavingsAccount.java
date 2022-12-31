@@ -30,4 +30,11 @@ public class SavingsAccount extends BankAccount{
         return getBalance()*Math.pow(1+rate/(100*times),times*years) - getBalance();
     }
 
+    public double getRate() {
+        return rate;
+    }
+
+    public double getMaxWithdrawalLimit() {
+        return maxWithdrawalLimit;
+    }
 }
